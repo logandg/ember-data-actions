@@ -61,7 +61,7 @@ export default Ember.Mixin.create({
    * @param {Object} params - arbitrary params for this action, passed to server
    */
   defaultResourceAction(type, actionName, snapshot, params) {
-    var actionURL = '/' + Ember.String.dasherize(actionName);
+    var actionURL = Ember.String.dasherize(actionName);
     var url = this.buildURL(type, snapshot.id, snapshot) + actionURL;
     var method = 'POST';
     var options = { data: params };
