@@ -4,7 +4,7 @@ Introduces resource and collection actions to the Ember Data API, a la Rails. Ac
 
 ## Setup
 ```
-npm install vovanmix/ember-data-actions --save-dev
+npm install logandg/ember-data-actions --save-dev
 ```
 
 To use resource or collection actions, you must include the appropriate mixins in your models and adapters.
